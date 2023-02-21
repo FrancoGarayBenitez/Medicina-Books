@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@300&family=Mynerve&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+.brand {
+    font-family: 'Mynerve', cursive;
+    font-size: 2rem;
+}
+.NavBarContainer {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    background-color:#fcf3cf; 
+}
+.cartContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.cartContainer img {
+    width: 35px;
+    height: 35px;
+    margin-right: 0.5rem;
+}
+.greeting {
+    font-family: 'Figtree', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
