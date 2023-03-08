@@ -1,0 +1,74 @@
+[
+    {
+       "id":1,
+       "title":"Anatomia con orientación clínica",
+       "author":"Keith L. Moore",
+       "edition":"6ta",
+       "year":"2019",
+       "category":"Anatomía",
+       "description":"Anatomía con orientación clínica proporciona a estudiantes de medicina y otras áreas afines la información anatómica que necesitan para su formación teórica y práctica. Este prestigioso libro de texto es célebre pos su orientación clínica y su énfasis en los aspectos funcionales de la anatomía, enfoque que permite revisar el sistema musculoesquelético, por ejemplo, centrándose en la acción y utilidad de los músculos y los grupos musculares en las actividades cotidianas. La 8.a edición refleja nueva información significativa y actualizaciones y mantiene los más altos estándares de precisión científica y clínica. Las actualizaciones reflejan cambios en la aplicación clínica de la anatomía, así como nuevas tecnologías de imagen, centrándose en la anatomía que los estudiantes necesitan saber. ",
+       "image":"../public/moore.jpg",
+       "price":2000,
+       "stock":3
+    },
+    {
+       "id":2,
+       "title":"Bontrager-Manual de posiciones y técnicas radiológicas",
+       "author":"John Lampignano",
+       "edition":"8va",
+       "year":"2014",
+       "category":"Radiología",
+       "description":"Mediante listas de instrucciones y fotografías de pacientes en las posiciones correctas, esta guía de bolsillo le ayudará a colocar a los pacientes con seguridad, rapidez y confianza durante los estudios radiográficos más frecuentes. Este manual de posiciones y anatomía radiológicas presenta también técnicas y criterios de valoración que le permitirán evaluar rápida y fácilmente las radiografías que realice en su práctica clínica.",
+       "image":"../public/botranger.jpeg",
+       "price":1500,
+       "stock":3
+    },
+    {
+       "id":3,
+       "title":"Curtis-Biología",
+       "author":"Helena Curtis",
+       "edition":"7ma",
+       "year":"1977",
+       "category":"Biología",
+       "description":"En esta edición se incluyen nuevos capítulos como el de Comunicación celular y el capítulo sobre Intervenciones humanas y cambios globales que aborda problemáticas ambientales relevantes que involucran problemas globales de gran significación social. Se ha reformulado totalmente secciones existentes como la de Diversidad de la vida a la luz de los árboles filogenéticos de modo que los seres vivos no se presentan en comportamientos estancos sino como resultado de una historia evolutiva. Se han reformulado totalmente capítulos ya existentes como el de pasaje de sustancias a través de la membrana celular y el capítulo destinado a desarrollo a nivel genético. En esta edición también se han incorporado nuevos recursos didácticos, a la vez se ha intentado conservar el estilo tan apreciado por los lectores de Biología.",
+       "image":"../public/curtis.jpg",
+       "price":3000,
+       "stock":3
+    },
+    {
+        "id":4,
+        "title":"CARDIN. Manual didáctico para la lectura de electrocardiogramas",
+        "author":"Francisco Javier Molano Casimiro",
+        "edition":"1ra",
+        "year":"2020",
+        "category":"Cardiología",
+        "description":" La obra ofrece una enseñanza directa, con un método fácil y conciso de la lectura de electrocardiogramas, dándole un enfoque pedagógico ante la laguna existente de manuales atractivos a la hora de enfrentarse a una tarea fundamental para el ejercicio de la medicina en los diferentes ámbitos asistenciales. Este método de aprendizaje está compuesto por algoritmos, reglas mnemotécnicas, esquemas, ilustraciones y electrocardiogramas, explicados por un cardiólogo de manera sencilla para facilitar el camino del lector hasta que sea capaz de interpretar e identificar los diferentes patrones electrocardiográficos y logre retenerlos para su desarrollo profesional.",
+        "image":"../public/cardin.png",
+        "price":5000,
+        "stock":3
+    },
+    {
+        "id":5,
+        "title":"Tomografía computarizada dirigida a técnicos superiores en imagen para el diagnóstico",
+        "author":"Joaquin Costa",
+        "edition":"1ra",
+        "year":"2015",
+        "category":"Radiología",
+        "description":"Comprende desde los principios básicos de física y la instrumentación hasta el desarrollo de técnicas funcionales, medios de contraste, cuidados al paciente, etc. Para los profesionales, supondrá una guía de recuerdo y actualización, ya que incluye las más recientes novedades tecnológicas y de aplicación en la práctica clínica. El contenido se clasifica en tres partes fundamentales: principios físicos e instrumentación, manejo del paciente, y anatomía seccional y procedimientos en imagen. Incluye un glosario de términos de la especialidad. Cada capítulo finaliza con preguntas de autoevaluación que permiten repasar el contenido.",
+        "image":"../public/tomografia.png",
+        "price":2500,
+        "stock":3
+    },
+    {
+        "id":6,
+        "title":"Snell. Anatomía clínica por regiones",
+        "author":"Lawrence E. Wineski",
+        "edition":"10ma",
+        "year":"2019",
+        "category":"Anatomía",
+        "description":"Elogiado por su organización clara y coherente, sus ilustraciones dinámicas y el énfasis en las aplicaciones clínicas, Snell. Anatomía Clínica por regiones combina perspectivas de experto junto con un enfoque fácil de usar para brindar un recurso de enseñanza y aprendizaje comprobado sobre la aplicación práctica de la anatomía. Ideal para programas de medicina, odontología y enfermería, este texto confiable guía a los estudiantes a través de los fundamentos de la anatomía humana, la descripción macroscópica, anatomía de superficie y su correlación clínica. Explica, además, la orientación anatómica con enfoque práctico que el estudiante necesita para tomar decisiones clínicas acertadas.",
+        "image":"../public/snell.jpg",
+        "price":3000,
+        "stock":3
+    }
+] 

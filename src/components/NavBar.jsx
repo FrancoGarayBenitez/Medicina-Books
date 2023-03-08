@@ -9,16 +9,47 @@ import {
 import { Button, Image } from '@chakra-ui/react'
 import img_cardiologia from '../assets/cardiologia.png'
 import img_diagnostico_por_imagenes from '../assets/diagnosticoPorImagenes.png'
-import img_gastroenterología from '../assets/gastroenterologia.png'
-import img_oftalmologia from '../assets/oftalmologia.png'
+import img_anatomia from '../assets/anatomia.png'
+import img_biologia from '../assets/biologia.png'
+import { Link } from 'react-router-dom'
 
 const NavBar = () => {
   return (
     <div className='NavBarContainer'>
+        <Link to="/">
         <h1 className='brand'>MEDICINA BOOKS</h1>
+        </Link>
+        <Link to="/catalogue">
+        <Button colorScheme='yellow'>Catálogo</Button>
+        </Link>
         <Menu>
             <MenuButton as={Button} colorScheme='yellow'>Categorías</MenuButton>
             <MenuList>
+                <Link to={`/category/${"Anatomía"}`}>
+                <MenuItem minH='40px'>
+                    <Image
+                    boxSize='2rem'
+                    borderRadius='full'
+                    src={img_anatomia}
+                    alt='categoría anatomía'
+                    mr='12px'
+                    />
+                    <span>Anatomía</span>
+                </MenuItem>
+                </Link>
+                <Link to={`/category/${"Biología"}`}>
+                <MenuItem minH='40px'>
+                    <Image
+                    boxSize='2rem'
+                    borderRadius='full'
+                    src={img_biologia}
+                    alt='categoría biología'
+                    mr='12px'
+                    />
+                    <span>Biología</span>
+                </MenuItem>
+                </Link>
+                <Link to={`/category/${"Cardiología"}`}>
                 <MenuItem minH='48px'>
                     <Image
                     boxSize='2rem'
@@ -27,8 +58,10 @@ const NavBar = () => {
                     alt='categoría cardiología'
                     mr='12px'
                     />
-                    <span>Cardiología</span>
+                    <span>Cardiología</span>  
                 </MenuItem>
+                </Link>
+                <Link to={`/category/${"Radiología"}`}>
                 <MenuItem minH='40px'>
                     <Image
                     boxSize='2rem'
@@ -37,31 +70,14 @@ const NavBar = () => {
                     alt='categoría diagnóstico por imágenes'
                     mr='12px'
                     />
-                    <span>Diagnóstico por imágenes</span>
+                    <span>Radiología</span>
                 </MenuItem>
-                <MenuItem minH='40px'>
-                    <Image
-                    boxSize='2rem'
-                    borderRadius='full'
-                    src={img_gastroenterología}
-                    alt='categoría gastroenterología'
-                    mr='12px'
-                    />
-                    <span>Gastroenterología</span>
-                </MenuItem>
-                <MenuItem minH='40px'>
-                    <Image
-                    boxSize='2rem'
-                    borderRadius='full'
-                    src={img_oftalmologia}
-                    alt='categoría oftalmología'
-                    mr='12px'
-                    />
-                    <span>Oftalmología</span>
-                </MenuItem>
+                </Link>
             </MenuList>
         </Menu>
+        <Link to="/cart">
         <CartWidget/>
+        </Link>
     </div>
   )
 }

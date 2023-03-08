@@ -5,6 +5,16 @@
     padding: 0;
     box-sizing: border-box;}
 
+.body {
+    background-color:#fcf3cf;
+}
+.welcome {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .brand {
     font-family: 'Mynerve', cursive;
     font-size: 2rem;
@@ -14,7 +24,7 @@
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    background-color:#fcf3cf; 
+    background-color:#f9e79f;
 }
 .cartContainer {
     display: flex;
@@ -30,4 +40,43 @@
     font-family: 'Figtree', sans-serif;
     font-size: 2rem;
     text-align: center;
+}
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;   
+}
+.cardItem {
+    width: 400px;
+    height: 600px;
+    margin: 1rem;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+}
+.cardItem:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-1%);
+}
+.img_card {
+    width: 250px;
+    height: 300px;
+}
+.cardContainer_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardItem_detail {
+    margin: 4rem;
+}
+.buttonAddCart {
+    margin-top: 1rem;
+}
+.cardFooter_detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
