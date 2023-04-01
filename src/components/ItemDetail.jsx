@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import { Card, Image, Stack, Heading, Text, CardBody, CardFooter, Button } from '@chakra-ui/react'
 import ItemCount from './ItemCount'
+import { CartContext } from '../context/ShoppingCartPovider'
 
-const ItemDetail = ({books}) => {
+const ItemDetail = ({book}) => {
 
-  const {id} = useParams()
-
-  const id_filter = books.filter((book) => book.id == id)
+  const {addItem} = useContext(CartContext)
+    
+  //Evento para indicar cantidad y agregar al carrito, se envía como prop a ItemCount.
+  const handleClickCart = (quantity) => {
+    addItem(book, quantity)
+  }
 
   return (
     <>
       {
-        id_filter.map((book) => {
-          return (
           <div key={book.id}>
             <Card
             direction={{ base: 'column', sm: 'row' }}
@@ -45,13 +47,15 @@ const ItemDetail = ({books}) => {
                   <Text color='blue.600' fontSize='2xl'>${book.price}</Text>
                 </CardBody>
                 <CardFooter>
-                  <ItemCount stock={book.stock}/>
+                  <ItemCount 
+                  stock={book.stock}
+                  id={book.id}
+                  handleClickCart={handleClickCart}
+                  />
                 </CardFooter>
               </Stack>
             </Card>
           </div>
-          )
-        })
       }
     </>
   )

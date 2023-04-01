@@ -6,11 +6,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Welcome from './components/Welcome'
 import ItemDetailContainer from './components/ItemDetailContainer'
 import Cart from './components/Cart'
+import ShoppingCartPovider from './context/ShoppingCartPovider'
 
 const App = () => {
   return (
   <ChakraProvider>
+    
     <BrowserRouter>
+    <ShoppingCartPovider>
     <NavBar/>
 
     <Routes>
@@ -20,7 +23,9 @@ const App = () => {
       <Route exact path="/item/:id" element={<ItemDetailContainer/>}/>
       <Route exact path="/cart" element={<Cart/>}/>
     </Routes>
+    </ShoppingCartPovider>
     </BrowserRouter>
+
   </ChakraProvider>
   )
 }

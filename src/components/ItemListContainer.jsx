@@ -1,25 +1,38 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import Data from "../data.json"
+import { collection, getDocs, getFirestore} from "firebase/firestore"
 import ItemList from './ItemList'
+import Loader from './Loader'
 
 const ItemListContainer = () => {
   const [books, setBooks] = useState([])
   const {category} = useParams()
+  const [loading, setLoading] = useState(true)
 
-  const getData = () => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(Data)
-      }, 1000)
-    })
-  }
-
+//Importamos información de la base de datos
   useEffect(() => {
-      getData().then((books) => setBooks(books))
-    },[])
-    
+    setTimeout(() => {
+      const db = getFirestore()
+  
+      const itemCollection = collection(db, "libros")
+  
+      setLoading(false)
+  
+      getDocs(itemCollection).then((snapshot) => {
+        const docs = snapshot.docs.map((doc) => ({id:doc.id , ...doc.data()}))
+        setBooks(docs)
+      })
+    }, 500)
+  }, [])
+  
+  //Filtrado de categorías
   const categoryFilter = books.filter((book) => book.category === category);
+
+  if (loading) {
+    return(
+      <Loader/>
+    )
+  }
 
   return (
     <div>

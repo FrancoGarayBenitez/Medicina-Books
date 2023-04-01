@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import CartWidget from './CartWidget'
 import {
     Menu,
@@ -13,20 +13,22 @@ import img_anatomia from '../assets/anatomia.png'
 import img_biologia from '../assets/biologia.png'
 import { Link } from 'react-router-dom'
 
+
 const NavBar = () => {
+
   return (
     <div className='NavBarContainer'>
         <Link to="/">
         <h1 className='brand'>MEDICINA BOOKS</h1>
         </Link>
         <Link to="/catalogue">
-        <Button colorScheme='yellow'>Catálogo</Button>
+        <Button colorScheme='yellow' className="buttons">Catálogo</Button>
         </Link>
         <Menu>
-            <MenuButton as={Button} colorScheme='yellow'>Categorías</MenuButton>
-            <MenuList>
-                <Link to={`/category/${"Anatomía"}`}>
-                <MenuItem minH='40px'>
+            <MenuButton as={Button} colorScheme='yellow' className="buttons">Categorías</MenuButton>
+            <MenuList backgroundColor='#f9e79f'>
+                <Link to={`/category/${"Anatomía"}`} >
+                <MenuItem minH='40px' backgroundColor='#f9e79f'>
                     <Image
                     boxSize='2rem'
                     borderRadius='full'
@@ -38,7 +40,7 @@ const NavBar = () => {
                 </MenuItem>
                 </Link>
                 <Link to={`/category/${"Biología"}`}>
-                <MenuItem minH='40px'>
+                <MenuItem minH='40px' backgroundColor='#f9e79f'>
                     <Image
                     boxSize='2rem'
                     borderRadius='full'
@@ -50,7 +52,7 @@ const NavBar = () => {
                 </MenuItem>
                 </Link>
                 <Link to={`/category/${"Cardiología"}`}>
-                <MenuItem minH='48px'>
+                <MenuItem minH='48px' backgroundColor='#f9e79f'>
                     <Image
                     boxSize='2rem'
                     borderRadius='full'
@@ -62,7 +64,7 @@ const NavBar = () => {
                 </MenuItem>
                 </Link>
                 <Link to={`/category/${"Radiología"}`}>
-                <MenuItem minH='40px'>
+                <MenuItem minH='40px' backgroundColor='#f9e79f'>
                     <Image
                     boxSize='2rem'
                     borderRadius='full'

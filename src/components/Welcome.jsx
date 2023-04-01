@@ -6,8 +6,8 @@ const Welcome = () => {
   return (
     <div className="welcome">
 <Box maxW='32rem'>
-  <Heading mb={4}>Bienvenidos a Medicina Books</Heading>
-  <Text fontSize='xl'>
+  <Heading mb={4} fontFamily={"Maven Pro, sans-serif"}>Bienvenidos a Medicina Books</Heading>
+  <Text fontSize='xl' fontFamily={"Maven Pro, sans-serif"}>
     Explorá nuestro tienda digital de libros para estudiantes y profesionales de la salud
   </Text>
   <Link to="/catalogue">
