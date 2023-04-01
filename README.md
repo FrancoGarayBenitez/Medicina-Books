@@ -12,3 +12,7 @@ La cantidad total se podrá visualizar en el NavBar y cada producto seleccionado
 
 Para finalizar cuenta con un formulario en donde se ingresa los datos del comprador, esa información es enviada a una base de datos que posteriormente devuelve un ID como identificador de rastreo de compra.
 
+
+
+https://user-images.githubusercontent.com/114446718/229319420-66d93d94-939c-4ca3-97f9-211bf8e32657.mp4
+
