@@ -16,7 +16,7 @@ import {
 const Item = ({ id, title, category, img, price }) => {
   return (
     <div>
-      <Card maxW="sm" className="cardItem" backgroundColor="#fcf3cf">
+      <Card className="cardItem" backgroundColor="#fcf3cf">
         <CardBody>
           <Center>
             <Image
